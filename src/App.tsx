@@ -6,6 +6,7 @@ import {Works} from "./layout/works/Works.tsx";
 import {Testimony} from "./layout/sections/testimony/Testimony.tsx";
 import {Contact} from "./components/contact/Contact.tsx";
 import {Slogan} from "./components/slogan/Slogan.tsx";
+import {Footer} from "./layout/footer/Footer.tsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Testimony/>
             <Contact/>
             <Slogan/>
+            <Footer/>
         </div>
     )
 }
