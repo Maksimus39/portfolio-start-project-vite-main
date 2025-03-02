@@ -6,7 +6,6 @@ type MenuItemProps = {
 }
 export const Menu = (props: MenuItemProps) => {
 
-
     return (
         <StyledMenu>
             <ul>
