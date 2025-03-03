@@ -17,16 +17,16 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     min-height: 100vh;
     background-color: azure;
 `
 
 const MainTitle = styled.h1`
-    color: darkblue;
+   // color: darkblue;
 `
 const Name = styled.h2`
-    color: darkblue;
+   //  color: darkblue;
 `
 
 const Photo = styled.img`
