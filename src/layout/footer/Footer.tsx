@@ -18,6 +18,11 @@ export const Footer = () => {
                             <Icon iconId={"vk"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>
                         </SocialIconList>
                     </SocialItem>
+                    <SocialItem>
+                        <SocialIconList>
+                            <Icon iconId={"gitHub"} height={"21px"}/>
+                        </SocialIconList>
+                    </SocialItem>
                 </SocialIconsList>
                 <Copyright>@ 2024 Maxim Minakov, All Right Reserved.</Copyright>
             </FlexWrapper>
