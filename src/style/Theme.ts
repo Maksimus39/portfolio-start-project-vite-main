@@ -5,9 +5,14 @@ export const Theme = {
 
         accent: "#7572D5",
         font: "#FFFFFF",
-        bulletsColor:"#FFFFFF80",
+        bulletsColor: "#FFFFFF80",
 
-        inputColor:"#252527FF",
-        placeholderColor:"#4A4A4AFF"
+        inputColor: "#252527FF",
+        placeholderColor: "#4A4A4AFF"
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576)",
     }
 }
