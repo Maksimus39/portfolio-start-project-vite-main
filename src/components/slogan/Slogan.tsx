@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import {SectionTitle} from "../SectionTitle.tsx";
 import {Button} from "../Button.tsx";
+import {Container} from "../Container.ts";
+import {FlexWrapper} from "../FlexWrapper.tsx";
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>Преобразуем идеи в цифровые решения</SectionTitle>
-            <Button>Hire me</Button>
+            <Container>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    <SectionTitle>Преобразуем идеи в цифровые решения</SectionTitle>
+                    <Button>Hire me</Button>
+                </FlexWrapper>
+            </Container>
         </StyledSlogan>
     );
 };
