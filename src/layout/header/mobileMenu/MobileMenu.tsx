@@ -10,11 +10,11 @@ export const MobileMenu = (props: MenuItemProps) => {
     return (
         <StyledMobileMenu>
 
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopUp isOpen={true}>
+            <MobileMenuPopUp isOpen={false}>
                 <ul>
                     {props.menuItem.map((item, index) => {
                         return <ListItem key={index}>
