@@ -32,8 +32,8 @@ export const Work = (props: WorkProps) => {
 
 const StyledWork = styled.div`
     background-color: ${Theme.colors.secondaryBg};
-    max-width: 540px;
-    width: 100%;
+    width: 330px;
+    flex-grow: 1;
 
     $(Link) {
         padding: 10px 0;
@@ -41,6 +41,10 @@ const StyledWork = styled.div`
         & + $(Link) {
             margin-left: 20px;
         }
+    }
+
+    @media ${Theme.media.desktop} {
+        max-width: 540px;
     }
 `
 
@@ -56,29 +60,12 @@ const Text = styled.p`
     margin: 14px 0 10px;
 `
 
-const Description=styled.div`
+const Description = styled.div`
     padding: 25px 20px;
 `
 
-const ImageWrapper=styled.div`
+const ImageWrapper = styled.div`
     position: relative;
-
-    &:hover {
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(4px);
-        }
-
-        ${Button} {
-            opacity: 1;
-        }
-    }
 
     ${Button} {
         opacity: 0;
@@ -90,6 +77,46 @@ const ImageWrapper=styled.div`
         &::before {
             width: 100%;
             height: 100%;
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        ${Button} {
+            opacity: 1;
+        }
+    }
+
+    @media ${Theme.media.tablet} {
+        &::before {
+            opacity: 1;
+        }
+
+        ${Button} {
+            opacity: 1;
         }
     }
 `
