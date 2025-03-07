@@ -1,6 +1,7 @@
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {Theme} from "../../../../style/Theme.ts";
 
 
 type SkillProps = {
@@ -24,8 +25,13 @@ export const Skill = (props: SkillProps) => {
 };
 
 const StyledSkill = styled.div`
-    width: 380px;
+    width: 330px;
     padding: 62px 20px 40px;
+    flex-grow: 1;
+
+    @media ${Theme.media.mobile} {
+        padding: 62px 0 40px;
+    }
 `
 
 const SkillTitle = styled.h3`
@@ -37,7 +43,7 @@ const SkillText = styled.p`
     text-align: center;
 `
 
-export const IconWrapper=styled.div`
+export const IconWrapper = styled.div`
     position: relative;
 
     &::before {
