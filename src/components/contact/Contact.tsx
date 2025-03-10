@@ -20,6 +20,7 @@ export const Contact = () => {
     );
 };
 
+
 const StyledContacts = styled.section``
 
 
