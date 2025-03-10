@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import {SectionTitle} from "../SectionTitle.tsx";
-import {Button} from "../Button.tsx";
+import {SectionTitle} from "../SectionTitle.ts";
+import {Button} from "../Button.ts";
 import {Container} from "../Container.ts";
-import {FlexWrapper} from "../FlexWrapper.tsx";
+import {FlexWrapper} from "../FlexWrapper.ts";
+import * as React from "react";
 
-export const Slogan = () => {
+export const Slogan: React.FC = () => {
     return (
         <StyledSlogan>
             <Container>
