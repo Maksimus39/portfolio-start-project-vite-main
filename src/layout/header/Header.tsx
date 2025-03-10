@@ -9,6 +9,8 @@ import {useEffect, useState} from "react";
 
 
 const items = ["Home", "Skills", "Works", "Testimony", "Contact"]
+
+
 export const Header: React.FC = () => {
     const [width, setWidth] = useState(window.innerWidth)
     const breakpoint = 768
