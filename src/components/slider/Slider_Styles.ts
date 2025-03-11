@@ -3,6 +3,7 @@ import {Theme} from "../../style/Theme.ts";
 
 const StyledSlider = styled.div`
     max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +27,6 @@ const Pagination = styled.div`
         display: inline-block;
         width: 7px;
         height: 7px;
-        margin: 5px;
         border-radius: 20px;
         background-color: ${Theme.colors.bulletsColor};
 
