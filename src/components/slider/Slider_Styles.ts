@@ -34,7 +34,7 @@ const Pagination = styled.div`
             margin-left: 5px;
         }
 
-        &.active {
+        &:active {
             background-color: ${Theme.colors.accent};
             width: 20px;
         }
