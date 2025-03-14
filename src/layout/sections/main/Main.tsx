@@ -3,8 +3,10 @@ import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Container} from "../../../components/Container.ts";
 import * as React from "react";
 import {S} from "./Main_Styles.ts"
+import Typewriter from 'typewriter-effect';
 
-export const Main:React.FC = () => {
+
+export const Main: React.FC = () => {
     return (
         <S.Main>
             <Container>
@@ -12,7 +14,17 @@ export const Main:React.FC = () => {
                     <div>
                         <S.SmallText>Hi there</S.SmallText>
                         <S.Name>I am <span>Maxim Minakov</span></S.Name>
-                        <S.MainTitle>A Web Developer.</S.MainTitle>
+                        <S.MainTitle>
+                            <p>A Web Developer.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['A Frontend Developer.'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 120
+                                }}
+                            />
+                        </S.MainTitle>
                     </div>
 
                     <S.PhotoWrapper>
