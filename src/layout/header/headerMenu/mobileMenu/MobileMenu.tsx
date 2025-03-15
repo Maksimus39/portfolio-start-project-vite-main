@@ -2,11 +2,8 @@ import {Menu} from "../menu/Menu.tsx";
 import {S} from "./../headerMenuStyles.ts"
 import {useState} from "react";
 
-type MenuItemProps = {
-    menuItem: string[]
-}
 
-export const MobileMenu = (props: MenuItemProps) => {
+export const MobileMenu = () => {
 
     const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
 
@@ -24,7 +21,7 @@ export const MobileMenu = (props: MenuItemProps) => {
                                onClick={() => {
                                    setMenuIsOpen(false)
                                }}>
-                <Menu menuItem={props.menuItem}/>
+                <Menu/>
             </S.MobileMenuPopUp>
         </S.StyledMobileMenu>
     );

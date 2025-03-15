@@ -3,7 +3,7 @@ import {Main} from "./layout/sections/main/Main.tsx";
 import {Skills} from "./layout/sections/skills/Skills.tsx";
 import {Works} from "./layout/works/Works.tsx";
 import {Testimony} from "./layout/sections/testimony/Testimony.tsx";
-import {Contact} from "./components/contact/Contact.tsx";
+import {Contact} from "./layout/sections/contact/Contact.tsx";
 import {Slogan} from "./components/slogan/Slogan.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {Particle} from "./components/particle/Particle.tsx";

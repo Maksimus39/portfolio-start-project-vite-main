@@ -57,7 +57,7 @@ export const Works = () => {
     }
 
     return (
-        <S.StyledWorks>
+        <S.StyledWorks id={"works"}>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu tabsItems={tabsItems}

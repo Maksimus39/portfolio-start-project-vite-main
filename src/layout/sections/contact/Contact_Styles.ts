@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Theme} from "../../style/Theme.ts";
+import {Theme} from "../../../style/Theme.ts";
 
 const StyledContacts = styled.section`
 position: relative;

@@ -1,13 +1,13 @@
-import {SectionTitle} from "../SectionTitle.ts";
-import {Button} from "../Button.ts";
-import {Container} from "../Container.ts";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
+import {Button} from "../../../components/Button.ts";
+import {Container} from "../../../components/Container.ts";
 import {S} from "./Contact_Styles.ts"
 import * as React from "react";
 
 
 export const Contact: React.FC = () => {
     return (
-        <S.StyledContacts>
+        <S.StyledContacts id={"contact"}>
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <S.StyledForm>

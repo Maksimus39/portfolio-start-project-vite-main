@@ -1,13 +1,10 @@
 import {Menu} from "../menu/Menu.tsx";
 import {S} from "./../headerMenuStyles.ts"
 
-export type MenuItemProps = {
-    menuItem: string[]
-}
-export const DesktopMenu = (props: MenuItemProps) => {
+export const DesktopMenu = () => {
     return (
         <S.StyledDesktopMenu>
-            <Menu menuItem={props.menuItem}/>
+            <Menu/>
         </S.StyledDesktopMenu>
     );
 };
