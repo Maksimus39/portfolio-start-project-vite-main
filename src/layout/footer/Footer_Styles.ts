@@ -5,6 +5,8 @@ import {font} from "../../style/Common.ts";
 const StyledFooter = styled.footer`
     background-color: ${Theme.colors.primaryBg};
     padding: 40px 40px;
+
+    position: relative;
 `
 const Name = styled.span`
     ${font({family: '"Josefin Sans", sans-serif', weight: 700, Fmax: 22, Fmin: 16})}

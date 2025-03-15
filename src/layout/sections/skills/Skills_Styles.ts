@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Theme} from "../../../style/Theme.ts";
 
 const StyledSkills = styled.section`
-
+    position: relative;
 `
 const StyledSkill = styled.div`
     width: 330px;
