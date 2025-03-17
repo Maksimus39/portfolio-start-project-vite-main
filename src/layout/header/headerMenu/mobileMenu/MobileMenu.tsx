@@ -8,6 +8,8 @@ export const MobileMenu = () => {
     const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
 
     const onBurgerBtnClick = () => setMenuIsOpen(!menuIsOpen)
+    const setMenuIsOpenHandler = () => setMenuIsOpen(false)
+
 
     return (
         <S.StyledMobileMenu>
@@ -18,9 +20,7 @@ export const MobileMenu = () => {
             </S.BurgerButton>
 
             <S.MobileMenuPopUp isOpen={menuIsOpen}
-                               onClick={() => {
-                                   setMenuIsOpen(false)
-                               }}>
+                               onClick={setMenuIsOpenHandler}>
                 <Menu/>
             </S.MobileMenuPopUp>
         </S.StyledMobileMenu>

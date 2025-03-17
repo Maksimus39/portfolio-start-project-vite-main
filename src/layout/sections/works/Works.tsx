@@ -7,6 +7,7 @@ import Counter from "../../../assets/images/webp_images/img2.webp"
 import {Container} from "../../../components/Container.ts";
 import {S} from "./Works_Styles.ts"
 import {useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 
 export type TabsItemType = "All" | "Landing" | "React" | "SPA"
 type ArrayDataType = Array<{ status: TabsItemType, title: string }>
@@ -20,6 +21,7 @@ const tabsItems: ArrayDataType = [
 
 const WorkData = [
     {
+        id: 1,
         title: "Social Networks",
         text: "Социальная сеть — это платформа для общения, обмена контентом " +
             "и взаимодействия с друзьями и сообществами.",
@@ -27,6 +29,7 @@ const WorkData = [
         type: "SPA"
     },
     {
+        id: 2,
         title: "Counter",
         text: "Счётчик — это простое приложение для отслеживания количества событий " +
             "или объектов с помощью инкрементации и декрементации.",
@@ -65,14 +68,27 @@ export const Works = () => {
                          currentFilterStatus={currentFilterStatus}
                 />
                 <FlexWrapper justify={'space-between'} align={"flex-start"} wrap={'wrap'}>
-                    {filteredWorks.map((w, index) => {
-                        return (
-                            <Work key={index}
-                                  title={w.title}
-                                  text={w.text}
-                                  src={w.src}/>
-                        )
-                    })}
+
+                    <AnimatePresence>
+                        {filteredWorks.map((w) => {
+                            return (
+                                <motion.div style={{width: "400px", flexGrow: 1, maxWidth: "540px"}}
+
+                                            layout={true}
+                                            key={w.id}
+                                            initial={{opacity: 0}}
+                                            animate={{opacity: 1}}
+                                            exit={{opacity: 0}}
+                                >
+                                    <Work key={w.id}
+                                          title={w.title}
+                                          text={w.text}
+                                          src={w.src}/>
+                                </motion.div>
+                            )
+                        })}
+                    </AnimatePresence>
+
                 </FlexWrapper>
             </Container>
         </S.StyledWorks>
