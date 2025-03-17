@@ -7,6 +7,7 @@ import {Contact} from "./layout/sections/contact/Contact.tsx";
 import {Slogan} from "./components/slogan/Slogan.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {Particle} from "./components/particle/Particle.tsx";
+import {GoTopBtn} from "./components/goTopBtn/GoTopBtn.tsx";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Contact/>
             <Slogan/>
             <Footer/>
+            <GoTopBtn/>
         </div>
     )
 }
