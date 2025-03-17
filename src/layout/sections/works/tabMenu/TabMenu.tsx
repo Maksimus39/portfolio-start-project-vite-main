@@ -1,5 +1,5 @@
-import {Link} from "../../../components/Link.ts";
-import {S} from "./../Works_Styles.ts"
+import {Link} from "../../../../components/Link.ts";
+import {S} from "../Works_Styles.ts"
 import {TabsItemType} from "../Works.tsx";
 
 

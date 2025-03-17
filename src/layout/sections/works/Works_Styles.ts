@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../components/FlexWrapper.ts";
-import {Theme} from "../../style/Theme.ts";
-import {Button} from "../../components/Button.ts";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
+import {Theme} from "../../../style/Theme.ts";
+import {Button} from "../../../components/Button.ts";
 
 
 // Works
@@ -9,7 +9,7 @@ const StyledWorks = styled.section`
     ${FlexWrapper} {
         gap: 30px;
     }
-    
+
     position: relative;
 `
 
@@ -51,12 +51,12 @@ const ImageWrapper = styled.div`
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
+        transition: ${Theme.animations.transition};
 
         &::before {
             width: 100%;
             height: 100%;
-            opacity: 0;
         }
     }
 
@@ -74,8 +74,9 @@ const ImageWrapper = styled.div`
         top: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         opacity: 0;
+        transition: ${Theme.animations.transition};
 
     }
 
@@ -86,6 +87,7 @@ const ImageWrapper = styled.div`
 
         ${Button} {
             opacity: 1;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -111,8 +113,8 @@ const StyledTabMenu = styled.nav`
         margin: 0 auto 40px;
     }
 `;
-const ListItem=styled.li`
-  
+const ListItem = styled.li`
+
 `
 
 export const S = {

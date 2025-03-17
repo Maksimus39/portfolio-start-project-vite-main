@@ -1,7 +1,6 @@
 import {S} from "./../headerMenuStyles.ts"
 
 
-//const items = ["Home", "Skills", "Works", "Testimony", "Contact"]
 const items = [
     {title: "Home", href: "home"},
     {title: "Skills", href: "skills"},

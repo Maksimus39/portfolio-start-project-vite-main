@@ -1,10 +1,10 @@
-import {SectionTitle} from "../../components/SectionTitle.ts";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {TabMenu} from "./tabMenu/TabMenu.tsx";
-import {FlexWrapper} from "../../components/FlexWrapper.ts";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Work} from "./work/Work.tsx";
-import SocialNetworks from "../../assets/images/webp_images/img1.webp"
-import Counter from "../../assets/images/webp_images/img2.webp"
-import {Container} from "../../components/Container.ts";
+import SocialNetworks from "../../../assets/images/webp_images/img1.webp"
+import Counter from "../../../assets/images/webp_images/img2.webp"
+import {Container} from "../../../components/Container.ts";
 import {S} from "./Works_Styles.ts"
 import {useState} from "react";
 

@@ -1,6 +1,6 @@
-import {Link} from "../../../components/Link.ts";
-import {Button} from "../../../components/Button.ts";
-import {S} from "./../Works_Styles.ts"
+import {Link} from "../../../../components/Link.ts";
+import {Button} from "../../../../components/Button.ts";
+import {S} from "../Works_Styles.ts"
 
 type WorkProps = {
     title: string;

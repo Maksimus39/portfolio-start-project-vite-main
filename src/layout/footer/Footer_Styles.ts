@@ -29,6 +29,7 @@ const SocialIconList = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ${Theme.animations.transition};
 
     color: ${Theme.colors.accent};
 
