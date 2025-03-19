@@ -3,17 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Maksimus39.github.io/portfolio-start-project-vite-main",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "pnpm build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@types/react-scroll": "^1.8.10",
     "framer-motion": "^12.5.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
     "react-awesome-reveal": "^4.3.1",
