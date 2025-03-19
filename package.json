@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://maksimus39.github.io/portfolio-start-project-vite-main",
+  "homepage": "https://Maksimus39.github.io/portfolio-start-project-vite-main",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
